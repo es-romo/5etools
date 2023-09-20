@@ -3,3 +3,5 @@ rules:
   - base: master
     upstream: 5etools-mirror-1:master
     mergeMethod: hardreset
+    reviewers:
+      - es-romo
