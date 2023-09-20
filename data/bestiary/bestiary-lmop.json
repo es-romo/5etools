@@ -16,6 +16,9 @@
 			"name": "Ash Zombie",
 			"source": "LMoP",
 			"page": 31,
+			"reprintedAs": [
+				"Ash Zombie|PaBTSO"
+			],
 			"size": [
 				"M"
 			],
@@ -237,6 +240,9 @@
 			"isNamedCreature": true,
 			"source": "LMoP",
 			"page": 41,
+			"reprintedAs": [
+				"Gundren Rockseeker|PaBTSO"
+			],
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
@@ -253,6 +259,9 @@
 			"isNamedCreature": true,
 			"source": "LMoP",
 			"page": 59,
+			"reprintedAs": [
+				"Mormesk the Wraith|PaBTSO"
+			],
 			"size": [
 				"M"
 			],
@@ -369,6 +378,9 @@
 			"isNamedCreature": true,
 			"source": "LMoP",
 			"page": 59,
+			"reprintedAs": [
+				"Nezznar the Spider|PaBTSO"
+			],
 			"size": [
 				"M"
 			],
@@ -541,6 +553,9 @@
 			"isNamedCreature": true,
 			"source": "LMoP",
 			"page": 50,
+			"reprintedAs": [
+				"Nundro Rockseeker|PaBTSO"
+			],
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM",
@@ -555,6 +570,9 @@
 			"name": "Redbrand Ruffian",
 			"source": "LMoP",
 			"page": 61,
+			"reprintedAs": [
+				"Redbrand Ruffian|PaBTSO"
+			],
 			"size": [
 				"M"
 			],
@@ -636,6 +654,9 @@
 			"isNamedCreature": true,
 			"source": "LMoP",
 			"page": 61,
+			"reprintedAs": [
+				"Sildar Hallwinter|PaBTSO"
+			],
 			"size": [
 				"M"
 			],
