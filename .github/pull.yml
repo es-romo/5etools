@@ -1,0 +1,5 @@
+version: "1"
+rules:
+  - base: master
+    upstream: 5etools-mirror-1:master
+    mergeMethod: hardreset
