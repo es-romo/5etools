@@ -664,6 +664,14 @@ Parser.sourceJsonToStylePart = function (source) {
 	return "";
 };
 
+Parser.sourceJsonToMarkerHtml = function (source, {isList = true, additionalStyles = ""} = {}) {
+	source = Parser._getSourceStringFromSource(source);
+	// TODO(Future) consider enabling this
+	// if (SourceUtil.isPartneredSourceWotc(source)) return `<span class="help-subtle ve-source-marker ${isList ? `ve-source-marker--list` : ""} ve-source-marker--partnered ${additionalStyles}" title="D&amp;D Partnered Source">${isList ? "" : "["}✦${isList ? "" : "]"}</span>`;
+	if (SourceUtil.isLegacySourceWotc(source)) return `<span class="help-subtle ve-source-marker ${isList ? `ve-source-marker--list` : ""} ve-source-marker--legacy ${additionalStyles}" title="Legacy Source">${isList ? "" : "["}ʟ${isList ? "" : "]"}</span>`;
+	return "";
+};
+
 Parser.stringToSlug = function (str) {
 	return str.trim().toLowerCase().toAscii().replace(/[^\w ]+/g, "").replace(/ +/g, "-");
 };
@@ -1337,6 +1345,7 @@ Parser.DURATION_AMOUNT_TYPES = [
 	"hour",
 	"day",
 	"week",
+	"month",
 	"year",
 ];
 
