@@ -469,10 +469,21 @@ input[type=checkbox].sidemenu__row__label__cb {
 
 	&disp-srd {
 		font-size: 8.5px;
-		vertical-align: super;
+		align-self: start;
 		top: 2px;
 		margin-right: 1px;
-		margin-left: -2px;
+		margin-left: 2px;
+	}
+
+	&disp-source-marker {
+		margin-left: 2px;
+	}
+
+	&wrp-page {
+		margin-left: 4px;
+		font-family: "Convergence", Arial, sans-serif;
+		font-weight: 100;
+		font-size: 94%;
 	}
 
 	// region Clear button
@@ -1765,7 +1776,7 @@ tr.regionaleffect {
 	line-height: 2.3em;
 
 	&--large {
-		font-size: 5vmin;
+		font-size: 4vmin;
 		color: initial;
 	}
 }
@@ -2184,46 +2195,6 @@ th.border {
 
 .life__output-wrp-border {
 	border: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.homebrew-section {
-	background-color: $rgb-bg-homebrew;
-
-	.homebrew-float {
-		float: right;
-		border: 1px dotted;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		padding-right: 2px;
-		padding-left: 2px;
-		text-indent: 0;
-	}
-
-	.homebrew-old-content {
-		color: #a00;
-		margin-left: 5px;
-	}
-
-	.homebrew-notice {
-		&::before {
-			content: "Homebrew";
-		}
-	}
-}
-
-.homebrew-inline {
-	background-color: $rgb-bg-homebrew;
-	text-decoration: underline dotted;
-}
-
-.stats tr.homebrew-hover {
-	> td {
-		padding: 5px 0.3em;
-
-		> div > *:last-child {
-			margin-bottom: 0;
-		}
-	}
 }
 
 .toast {
@@ -3006,7 +2977,7 @@ th.border {
 
 	.stripe-odd-table > tbody > tr:nth-child(odd),
 	.stripe-even-table > tbody > tr:nth-child(even) {
-		background-color: #4e4e4e80; // pre-blend (50% opacity): 38 38 38
+		background-color: $rgb-stripe-grey--night;
 	}
 
 	#please-select-message.showing > td {
@@ -3125,18 +3096,6 @@ th.border {
 
 	.content-tab-bar {
 		background: $rgb-bg--night;
-	}
-
-	.homebrew-section {
-		background-color: $rgb-bg-homebrew--night;
-
-		.homebrew-old-content {
-			color: #f99;
-		}
-	}
-
-	.homebrew-inline {
-		background-color: $rgb-bg-homebrew--night;
 	}
 
 	.highlight {
